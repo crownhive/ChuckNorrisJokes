@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		F525A4E824354F0500E219B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F525A4E724354F0500E219B7 /* Assets.xcassets */; };
 		F525A4EB24354F0500E219B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F525A4EA24354F0500E219B7 /* Preview Assets.xcassets */; };
 		F525A4EE24354F0500E219B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F525A4EC24354F0500E219B7 /* LaunchScreen.storyboard */; };
+		F525A4F724354F3D00E219B7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F525A4F624354F3D00E219B7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F525A4F724354F3D00E219B7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = ChuckNorrisJokes;
+			packageProductDependencies = (
+				F525A4F624354F3D00E219B7 /* Alamofire */,
+			);
 			productName = ChuckNorrisJokes;
 			productReference = F525A4DE24354F0400E219B7 /* ChuckNorrisJokes.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = F525A4D524354F0400E219B7;
+			packageReferences = (
+				F525A4F524354F3D00E219B7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F525A4DF24354F0400E219B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChuckNorrisJokes/Preview Content\"";
-				DEVELOPMENT_TEAM = 47XB277NN4;
+				DEVELOPMENT_TEAM = RK6S4R53KP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChuckNorrisJokes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChuckNorrisJokes/Preview Content\"";
-				DEVELOPMENT_TEAM = 47XB277NN4;
+				DEVELOPMENT_TEAM = RK6S4R53KP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChuckNorrisJokes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F525A4F524354F3D00E219B7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F525A4F624354F3D00E219B7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F525A4F524354F3D00E219B7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F525A4D624354F0400E219B7 /* Project object */;
 }
